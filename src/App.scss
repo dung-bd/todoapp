@@ -1,0 +1,21 @@
+
+.App{
+    max-width: 500px;
+    margin:0 auto;
+    h1 {
+        text-align: center;
+    }
+    .todo-list{
+     &-item{
+         display: grid;
+         width: 100%;
+         grid-template-columns: 1fr max-content max-content max-content;
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+
+

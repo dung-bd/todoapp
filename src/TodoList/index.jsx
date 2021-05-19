@@ -1,4 +1,4 @@
-import React,{useCallback} from "react"
+import React from "react"
 
 
 function TodoList(props){
@@ -14,6 +14,8 @@ function TodoList(props){
             onTodoClick(todo)
         }
     }
+    
+    
     return(
         <ul className="todo-list">
             {todos.map(todo=>(
@@ -21,6 +23,7 @@ function TodoList(props){
                 <li key={todo.id}>{todo.name}</li>
                 <button onClick={() => handleClick(todo)}>Delete</button>
                 <button onClick={()=>{handleComplete(todo.id)}}>complete</button>
+        
                 </div>
             ))}
         </ul>

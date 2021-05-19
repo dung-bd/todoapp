@@ -34,9 +34,7 @@ function App(){
            
     })
   }
- function handleUpdate(){
-
- }
+ 
   function handleAddForm(formValues){
     console.log("Form submit: ", formValues)
     const newTodo=new Task(todoList.length + 1,formValues.title,false)
